@@ -1,0 +1,61 @@
+.container_botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.container_botoes button {
+  flex: 1 1 calc(50% - 10px);
+  max-width: calc(50% - 10px);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.container_botoes button:hover {
+  background-color: goldenrod;
+}
+
+.icone {
+  width: 20px;
+  height: auto;
+}
+
+.acenderBtn {
+  background-color: goldenrod;
+}
+
+@media (min-width: 550px) {
+  .container_botoes {
+    justify-content: space-around;
+  }
+
+  .container_botoes button {
+    padding: 10px 37px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .secao_categorias {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+
+  .container_botoes {
+    justify-content: space-between;
+  }
+
+  .container_botoes button {
+    flex: 1 1 auto;
+    max-width: none;
+  }
+}

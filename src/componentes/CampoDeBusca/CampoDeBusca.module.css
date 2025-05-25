@@ -1,0 +1,58 @@
+.containerBusca {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 2px solid #f3f3f3;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.containerBusca:hover {
+  border: 2px solid goldenrod;
+}
+
+.icone {
+  width: 30px;
+  height: auto;
+}
+
+.containerBusca input {
+  width: 100%;
+  border: 0;
+  border-radius: 10px;
+  outline: none;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  color: goldenrod;
+  padding: 8px 10px;
+}
+
+.containerBusca input::placeholder {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+@media (min-width: 768px) {
+  .containerBusca {
+    flex-direction: row;
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 550px) {
+  .containerBusca {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  border: 2px solid #f3f3f3;
+  border-radius: 20px;
+  padding: 10px;
+}
+  .containerBusca input {
+    padding: 4px 10px;
+  }
+}
